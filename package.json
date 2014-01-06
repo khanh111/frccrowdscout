@@ -1,12 +1,12 @@
 {
   "name": "mean",
   "description": "MEAN - A Modern Stack: MongoDB, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).",
-  "version": "0.1.2",
+  "version": "0.0.1",
   "private": false,
-  "author": "Amos Haviv",
+  "author": "Hamzah Khan",
   "repository": {
     "type": "git",
-    "url": "https://github.com/linnovate/mean.git"
+    "url": "https://github.com/khanh111/scout2014"
   },
   "engines": {
     "node": "0.10.x",
