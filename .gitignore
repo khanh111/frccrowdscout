@@ -4,3 +4,5 @@
 node_modules/
 public/lib
 test/coverage/
+npm-debug.log
+*.css
