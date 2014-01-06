@@ -17,16 +17,14 @@ module.exports = function(app, passport, db) {
 	app.locals.pretty = true;
 
 	//Should be placed before express.static
-	app.use(
-		stylus.middleware({
+	app.use(stylus.middleware({
 			src: config.root + '/public',
 			compile: function compile(str, path) {
 		  	return stylus(str)
 		    .set('filename', path)
 			  .set('compress', true)
 		  }
-		});
-	);
+		}));
 
 	app.use(express.compress({
 		filter: function(req, res) {
