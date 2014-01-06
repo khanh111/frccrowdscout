@@ -18,13 +18,13 @@ module.exports = function(app, passport, db) {
 
 	//Should be placed before express.static
 	app.use(stylus.middleware({
-			src: config.root + '/public',
-			compile: function compile(str, path) {
-		  	return stylus(str)
-		    .set('filename', path)
-			  .set('compress', true)
-		  }
-		}));
+		src: config.root + '/public',
+		compile: function compile(str, path) {
+	  	return stylus(str)
+		  .set('filename', path)
+		  .set('compress', true)
+		}
+	}));
 
 	app.use(express.compress({
 		filter: function(req, res) {
@@ -101,6 +101,5 @@ module.exports = function(app, passport, db) {
 				error: 'Not found'
 			});
 		});
-
 	});
 };
