@@ -9,7 +9,7 @@ var Mixed = Schema.Types.Mixed;
 
 var MatchSchema = new Schema({
 	event: {
-		type: ObjectId, 
+		type: ObjectId,
 		ref:'Event'
 	},
 	number: Number,
@@ -18,7 +18,7 @@ var MatchSchema = new Schema({
 
 	redAlliance: {
 		teams: [{
-			type: ObjectId, 
+			type: ObjectId,
 			ref: 'Team'
 		}],
 		score: Number,
@@ -28,7 +28,7 @@ var MatchSchema = new Schema({
 
 	blueAlliance: {
 		teams: [{
-			type: ObjectId, 
+			type: ObjectId,
 			ref: 'Team'
 		}],
 		score: Number,
@@ -37,7 +37,9 @@ var MatchSchema = new Schema({
 	},
 	
 	matches: [{
-		type: ObjectId, 
+		type: ObjectId,
 		ref:'Match'
 	}]
 });
+
+mongoose.model('Match', MatchSchema);

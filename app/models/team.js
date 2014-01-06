@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = Schema.Types.ObjectId;
-var Mixed = Schema.Types.Mixed;
+//var Mixed = Schema.Types.Mixed;
 
 /**
 * Team Schema
@@ -17,17 +17,19 @@ var TeamSchema = new Schema({
 	awards: [String],
 
 	robot: {
-		type: Schema.ObjectId, 
+		type: ObjectId,
 		ref: 'Robot'
 	},
 
 	events: [{
-		type: Schema.ObjectId, 
+		type: ObjectId,
 		ref: 'Event'
 	}],
 
 	matches: [{
-		type: Schema.ObjectId,
+		type: ObjectId,
 		ref: 'Match'
 	}]
 });
+
+mongoose.model('Team', TeamSchema);

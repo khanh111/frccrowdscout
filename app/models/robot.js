@@ -11,10 +11,12 @@ var RobotSchema = new Schema({
 	//ex. ORPO
 	_id: Number,
 	team: {
-		type: Schema.ObjectId, 
+		type: ObjectId,
 		ref: 'Team'
 	},
 	name: String,
 
 	stats: Mixed
 });
+
+mongoose.model('Robot', RobotSchema);

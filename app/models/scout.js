@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = Schema.Types.ObjectId;
-var Mixed = Schema.Types.Mixed;
+//var Mixed = Schema.Types.Mixed;
 
 /**
 * Scout Schema
@@ -20,3 +20,5 @@ var ScoutSchema = new Schema({
 		ref: 'Match'
 	}]
 });
+
+mongoose.model('Scout', ScoutSchema);

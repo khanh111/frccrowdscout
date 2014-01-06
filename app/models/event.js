@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = Schema.Types.ObjectId;
-var Mixed = Schema.Types.Mixed;
+//var Mixed = Schema.Types.Mixed;
 
 /**
 * Event Schema
@@ -16,11 +16,13 @@ var EventSchema = new Schema({
 	dates: [Date],
 
 	teams: [{
-		type: ObjectId, 
+		type: ObjectId,
 		ref:'Team'
 	}],
 	matches: [{
-		type: ObjectId, 
+		type: ObjectId,
 		ref:'Match'
 	}]
 });
+
+mongoose.model('Event', EventSchema);
