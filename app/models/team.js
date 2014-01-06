@@ -14,9 +14,9 @@ var TeamSchema = new Schema({
 	//basic info
 	name: String,
 	//relevant awards
-	awards: [String]
+	awards: [String],
 
-	robotData: {
+	robot: {
 		type: Schema.ObjectId, 
 		ref: 'Robot'
 	},
