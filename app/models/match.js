@@ -1,3 +1,5 @@
+'use strict';
+
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = Schema.Types.ObjectId;
@@ -14,7 +16,7 @@ var MatchSchema = new Schema({
 	},
 	number: Number,
 
-	time: Date,
+	startTime: Date,
 
 	redAlliance: {
 		teams: [{

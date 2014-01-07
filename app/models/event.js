@@ -1,3 +1,5 @@
+'use strict';
+
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = Schema.Types.ObjectId;
@@ -11,6 +13,7 @@ var EventSchema = new Schema({
 	//ex. ORPO
 	_id: String,
 
+	first_year: Date,
 	name: String,
 	location: String,
 	dates: [Date],
