@@ -1,4 +1,28 @@
-# 1540 Scouting System for 2014
+# FRC Crowdscout, by Teams 1540 and 1306
+
+## Usher in a new era of FRC competitive analysis.
+Crowdscout allows FRC teams to collaboratively scout a set standard predefined, quantitative measurements for each season. Each team can push that set of data to the server with the Crowdscout API while still utilizing their own ability to keep track of any data they want. There is no requirement that you switch your whole scouting system to Crowdscout. Rather, we prefer that you create your own system and interact with Crowdscout by uploading spreadsheets and using the API to push data to the database.
+
+## A REST API for Developers
+Crowdscout has a REST API that will allow teams who have built electronic scouting systems to effortlessly push and access Crowdscout data.
+
+## Paper Scouting Support
+Teams that use paper scouting methods are not left out! Through use of Team 1306's custom scouting sheet creation software OMAR, crowdscout can generate images which can be scanned for data that can either be sent to Crowdscout or used by the team.
+
+## FAQ
+Where is crowdscout hosted?
+
+How can I sign up?
+
+Documentation?
+
+
+
+
+
+
+
+
 
 
 
