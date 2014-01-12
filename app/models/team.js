@@ -15,6 +15,7 @@ var TeamSchema = new Schema({
 
 	//basic info
 	name: String,
+	location: String,
 	//relevant awards
 	awards: [String],
 
