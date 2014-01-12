@@ -25,7 +25,6 @@ var MatchSchema = new Schema({
 		}],
 		score: Number,
 		fouls: Number, //points or number?
-		stats: Mixed
 	},
 
 	blueAlliance: {
@@ -35,12 +34,11 @@ var MatchSchema = new Schema({
 		}],
 		score: Number,
 		fouls: Number, //points or number?
-		stats: Mixed
 	},
 	
-	matches: [{
+	snapshots: [{
 		type: ObjectId,
-		ref:'Match'
+		ref: 'MatchSnapshot'
 	}]
 });
 
